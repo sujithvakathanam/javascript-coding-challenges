@@ -5,7 +5,8 @@ This is to improve my Javascript coding skillset.
 ## How to run?
 * Install Node in your local machine
 * Navigate to the file that you like to run
-* Open command prompt , type in <node> <filename>
+* Open command prompt , type in 
+* `node filename`
 * It will return the result of the coding challenge in that file
 
 ### What is edabit coding challenges??
