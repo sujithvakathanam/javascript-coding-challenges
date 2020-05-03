@@ -1,22 +1,20 @@
-/*
+// ReverseAndNot
+// Write a function that takes an integer i and returns an integer with the integer backwards followed by the original integer.
+//
+// To illustrate:
+//
+// 123
+// We reverse 123 to get 321 and then add 123 to the end, resulting in 321123.
+//
+// Examples
+// reverseAndNot(123) ➞ 321123
+//
+// reverseAndNot(123456789) ➞ 987654321123456789
+// Notes
+// N/A
 
-ReverseAndNot
-Write a function that takes an integer i and returns an integer with the integer backwards followed by the original integer.
 
-To illustrate:
-
-123
-We reverse 123 to get 321 and then add 123 to the end, resulting in 321123.
-
-Examples
-reverseAndNot(123) ➞ 321123
-
-reverseAndNot(123456789) ➞ 987654321123456789
-Notes
-N/A
-
- */
-/* Soltuion1
+// Soltuion1
 
 function reverseAndNot(i) {
 
@@ -33,9 +31,8 @@ function reverseAndNot(i) {
 
 let i = 123456789;
 console.log(reverseAndNot(i));
-*/
 
-/*Solution2 - Be careful -reverse is destructive
+//Solution2 - Be careful -reverse is destructive
 function reverseAndNot(i) {
 
     let arr2 = [...String(i)]; // Num to string and then coverts it into each string within array
@@ -49,7 +46,6 @@ function reverseAndNot(i) {
 let i = 567;
 console.log(reverseAndNot(i));
 
-*/
 function largestSwap(num) {
     let arr= [];
     let i = num;

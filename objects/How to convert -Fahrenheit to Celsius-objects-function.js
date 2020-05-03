@@ -1,22 +1,25 @@
-//Challenge
-//A function to accept a fahrenheit temperate and return a object containing celsius, kelvin
+/*
+ * Challenge
+ * A function to accept a fahrenheit temperate and return a object containing celsius, kelvin
+ */
 
-let convertFahrenheit = function (fahrenheit) {
-    let celsius = (fahrenheit - 32) * 5/9;
-    let kelvin = (fahrenheit + 459.67) * 5/9
-    return {
-        TempinFahrenheit: fahrenheit,
-        TempinCelsius : celsius,
-        TempinKelvin : kelvin
-    }
-}
+const convertFahrenheit = function (fahrenheit) {
+  const celsius = (fahrenheit - 32) * 5 / 9;
+  const kelvin = (fahrenheit + 459.67) * 5 / 9;
 
-let result = convertFahrenheit(50);
+  return {
+    TempinFahrenheit : fahrenheit,
+    TempinCelsius    : celsius,
+    TempinKelvin     : kelvin
+  };
+};
+
+const result = convertFahrenheit(50);
 console.log(result);
 console.log(`Temp in celsius is ${result.TempinCelsius}`);
 console.log(`Temp in kelvin is ${result.TempinKelvin}`);
 
-let checkObjects = function(kelvin) {
-    console.log(kelvin);
-}
+const checkObjects = function (kelvin) {
+  console.log(kelvin);
+};
 checkObjects(result.TempinKelvin);

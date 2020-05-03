@@ -1,89 +1,55 @@
-/*
-Create a Book constructor that has two properties :
 
-Title
-Author
-and two methods:
+// Solution 1 */
 
-A method named getTitle that returns: "Title: " + the instance title.
-A method named getAuthor that returns: "Author: " + the instance author.
-and instantiate this constructor by creating 3 new books:
+function Book (title, author) {
+  // Write your properties and methods here
 
-Pride and Prejudice - Jane Austen (PP)
-Hamlet - William Shakespeare (H)
-War and Peace - Leo Tolstoy (WP)
-Name the new object instances PP, H, and WP, respectively.
+  this.title = title;
+  this.author = author;
 
-For instance, if I instantiated the following book using this Book constructor function:
+  this.getTitle = function () {
+    return `Title : ${this.title}`;
+  };
 
-Harry Potter - J.K. Rowling (HP)
-I would get the following properties and methods:
-
-Examples
-HP.title ➞ "Harry Potter"
-
-HP.author ➞ "J.K. Rowling"
-
-HP.getTitle() ➞ "Title: Harry Potter"
-
-HP.getAuthor() ➞ "Author: J.K. Rowling"
-Notes
-Read more about constructor functions in the Resources tab.
-Remember, after you've finished writing the constructor function, you must instantiate it through the creation of new objects.
-
- */
-
-/*Solution 1 */
-
-/*
-function Book(title, author) {
-    // Write your properties and methods here
-
-    this.title = title;
-    this.author = author;
-
-    this.getTitle = function(){
-        return `Title : ${this.title}`;
-    };
-
-    this.getAuthor = function() {
-        return `Author : ${this.author}`;
-    }
+  this.getAuthor = function () {
+    return `Author : ${this.author}`;
+  };
 }
 
 // Instantiate your Book constructor here
-let PP = new Book("Pride and Prejudice", "Jane Austin");
-let H = new Book("Hamlet", "Willian Shakespeare");
-let WP =  new Book("War and Peace", "Leo Tolstoy");
+const PP = new Book('Pride and Prejudice', 'Jane Austin');
+const H = new Book('Hamlet', 'Willian Shakespeare');
+const WP = new Book('War and Peace', 'Leo Tolstoy');
 
 console.log(H.title);
 console.log(H.author);
 console.log(H.getTitle());
 console.log(H.getAuthor());
 
-*/
+// Solution 2
 
-/*Solution 2*/
-class Book {
-    constructor(title, author){
-        this.title = title;
-        this.author = author;
-    }
+class Book1 {
+  constructor (title, author) {
+    this.title = title;
+    this.author = author;
+  }
 
-    getTitle() {
-        return `Title: ${this.title}`;
-    }
+  getTitle () {
+    return `Title: ${this.title}`;
+  }
 
-    getAuthor()  {
-        return `Author: ${this.author}`;
-    }
+  getAuthor () {
+    return `Author: ${this.author}`;
+  }
 }
 
-let PP = new Book("Pride and Prejudice", "Jane Austin");
-let H = new Book("Hamlet", "Willian Shakespeare");
-let WP =  new Book("War and Peace", "Leo Tolstoy");
+// eslint-disable-next-line no-unused-vars
+const PP1 = new Book1('Pride and Prejudice', 'Jane Austin');
+const H1 = new Book1('Hamlet', 'Willian Shakespeare');
+// eslint-disable-next-line no-unused-vars
+const WP1 = new Book1('War and Peace', 'Leo Tolstoy');
 
-console.log(H.title);
-console.log(H.author);
-console.log(H.getTitle());
-console.log(H.getAuthor());
+console.log(H1.title);
+console.log(H1.author);
+console.log(H1.getTitle());
+console.log(H1.getAuthor());
