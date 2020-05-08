@@ -26,3 +26,20 @@ function censorString (str, arr, char) {
 }
 
 console.log(censorString('Today is a Wednesday!', ['Today', 'a'], '-'));
+
+// Solution 2
+function censorString1 (str, arr, char) {
+  const newArr = str.split(' ');
+  let newStrArr = [];
+
+  // Please note if you use in, it will retrieve the index
+  // Please note how to create a string from a char with char.repeat() method
+
+  for (let item of newArr) {
+    arr.includes(item) ? newStrArr.push(char.repeat(item.length)) : newStrArr.push(item);
+  }
+
+  return newStrArr.join(' ');
+}
+
+console.log(censorString1('Today is a Wednesday!', ['Today', 'a'], '-'));
