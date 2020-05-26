@@ -23,6 +23,10 @@
  *  For example, /t$/ does not match the "t" in "eater", but does match it in "eat".
  */
 
+// Please use below link to test Regex
+// https://regex101.com/
+// Character classes are explained well here -https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes
+
 function isJS (path) {
   return path.match(/jsx$/) != null || path.match(/js$/) != null;
 }
