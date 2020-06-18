@@ -1,6 +1,7 @@
 // /*
 // Get the Diagonals
-// Given a square array (n*n size) implement a function that returns a new array containing two arrays equal to the two diagonals, in the following order:
+// Given a square array (n*n size) implement a function that returns a new array containing two arrays
+// equal to the two diagonals, in the following order:
 //
 // Diagonal 1 = from upper-left to lower-right corner
 // Diagonal 2 = from upper-right to lower-left corner
