@@ -14,7 +14,7 @@ const convertFahrenheit = function (fahrenheit) {
   };
 };
 
-const result = convertFahrenheit(50);
+let result = convertFahrenheit(50);
 console.log(result);
 console.log(`Temp in celsius is ${result.TempinCelsius}`);
 console.log(`Temp in kelvin is ${result.TempinKelvin}`);
