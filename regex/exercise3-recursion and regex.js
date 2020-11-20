@@ -1,6 +1,7 @@
 // https://edabit.com/challenge/rKeYpxFeRQRP2Afg7
 // No Yelling
-// Create a function that transforms sentences ending with multiple question marks ? or exclamation marks ! into a sentence only ending with one without changing punctuation in the middle of the sentences.
+// Create a function that transforms sentences ending with multiple question marks ? or exclamation marks ! into a sentence
+// nly ending with one without changing punctuation in the middle of the sentences.
 //
 //   Examples
 // NoYelling("What went wrong?????????") ➞ "What went wrong?"
