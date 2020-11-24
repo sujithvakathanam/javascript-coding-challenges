@@ -20,6 +20,7 @@
 function changeTypes (arr) {
   const newArr = [];
   arr.map(item => {
+    // eslint-disable-next-line no-negated-condition
     if (!(typeof item === 'number' && item % 2 === 0)) {
       if (typeof item === 'string') {
         newArr.push(`${item[0].toUpperCase() + item.slice(1)}!`);
