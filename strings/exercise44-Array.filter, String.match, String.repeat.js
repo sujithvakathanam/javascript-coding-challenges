@@ -19,7 +19,7 @@
 // Notes
 // Return an empty string if all the arrowheads cancel out.
 
-//Solution1 -using Array.filter, String.match, String.repeat
+// Solution1 -using Array.filter, String.match, String.repeat
 function calculateArrowhead (arr) {
   let countofLeftMove = 0;
   let countofRightMove = 0;
@@ -36,21 +36,23 @@ function calculateArrowhead (arr) {
   }
   if (countofLeftMove > countofRightMove) {
     return '<'.repeat(countofLeftMove - countofRightMove);
-  } else {
-    return '>'.repeat(countofRightMove - countofLeftMove);
   }
+
+  return '>'.repeat(countofRightMove - countofLeftMove);
 }
 
-console.log(calculateArrowhead([">>>>", "<", "<", "<"]));
+console.log(calculateArrowhead(['>>>>', '<', '<', '<']));
 
-//Solution2 -using arr.map, arra.reduce
-// please note 1 : -1  will increment
+/*
+ * Solution2 -using arr.map, arra.reduce
+ *  please note 1 : -1  will increment
+ */
 function calculateArrowhead1 (arr) {
-  const n = [...arr.join('')].map((item)=> item === '>'? 1: -1).reduce((a,b)=> a+b);
-  return n > 0 ? '>'.repeat(n) : '<'.repeat(Math.abs(n));
+  const n = [...arr.join('')].map(item => (item === '>' ? 1 : -1)).reduce((a, b) => a + b);
 
+  return n > 0 ? '>'.repeat(n) : '<'.repeat(Math.abs(n));
 }
 
-console.log(calculateArrowhead1([">>>>", "<", "<", "<"]));
-console.log(calculateArrowhead1([">", "<", ">>", "<", "<<<"]));
-console.log(calculateArrowhead1([">>>", "<<<"]));
+console.log(calculateArrowhead1(['>>>>', '<', '<', '<']));
+console.log(calculateArrowhead1(['>', '<', '>>', '<', '<<<']));
+console.log(calculateArrowhead1(['>>>', '<<<']));
