@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "javascript edabit coding challenges and solutions",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "aws-sdk": "^2.734.0"
+  },
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.1",
