@@ -17,6 +17,7 @@
  * Return false if the arguments are empty or not provided.
  */
 
+
 function marathonDistance (d) {
   const totalDistance = d.reduce((acc, cv) => acc + Math.abs(cv), 0);
 
